@@ -1,0 +1,100 @@
+.logo{
+width: 250px;
+display: inline-flex;
+margin-top: 20px;
+
+
+}
+.menu-nav{
+    display:inline-flex ;
+    justify-content: center;
+    margin-left: 250px;
+}
+.lista-nav{
+list-style: none;
+
+}
+
+.elementos-nav {
+    float: left;
+    padding: 10px;
+}
+
+.botones-nav{
+text-decoration: none;
+color: white;
+font-family: 'Raleway', sans-serif;
+font-size:xx-large;
+}
+
+header {
+    background-color:#500ED0;
+}
+
+
+.elementos-nav:hover a{
+color: black;    
+}
+
+.lupa{
+vertical-align: middle;
+width: 35px;
+}
+
+.form-header {
+display:inline-flex ;
+justify-content: flex-end;
+font-size: x-large;
+margin-left: 250px;
+}
+
+.fieldset-buscador {
+    padding: 0px;
+    border: none;
+}
+
+.buscador{
+display: inline-block;
+padding: 10px; 
+border-radius: 4px; 
+font-size: 18px;
+background-color: #eaeaea;
+color: rgb(0, 0, 0);
+}
+
+.footer {
+    background-color:#500ED0;
+    
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+
+.p1
+{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+.social {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 800px;
+}
+
+.iconos{
+    
+    padding: 10px;
+}
+
+.copy {
+display: flex;
+justify-content: center;    
+color: white;
+}
