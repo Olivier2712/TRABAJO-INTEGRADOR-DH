@@ -2,13 +2,21 @@
 width: 250px;
 display: inline-flex;
 margin-top: 20px;
-
-
 }
+
+.contenedor {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 100%;
+    
+}
+
 .menu-nav{
     display:inline-flex ;
     justify-content: center;
     margin-left: 250px;
+   
 }
 .lista-nav{
 list-style: none;
@@ -29,6 +37,7 @@ font-size:xx-large;
 
 header {
     background-color:#500ED0;
+    width: 100%;
 }
 
 
@@ -36,16 +45,13 @@ header {
 color: black;    
 }
 
-.lupa{
-vertical-align: middle;
-width: 35px;
-}
+
 
 .form-header {
 display:inline-flex ;
-justify-content: flex-end;
+justify-content:space-between;
 font-size: x-large;
-margin-left: 250px;
+
 }
 
 .fieldset-buscador {
@@ -53,18 +59,11 @@ margin-left: 250px;
     border: none;
 }
 
-.buscador{
-display: inline-block;
-padding: 10px; 
-border-radius: 4px; 
-font-size: 18px;
-background-color: #eaeaea;
-color: rgb(0, 0, 0);
-}
+
 
 .footer {
     background-color:#500ED0;
-    
+width: 100%;    
 }
 
 h3 {
@@ -97,4 +96,47 @@ h3 {
 display: flex;
 justify-content: center;    
 color: white;
+}
+
+.buscar {
+position: absolute;
+padding: 5px;  
+display: inline-flex; 
+margin-top: 55px;
+margin-left: 350px;
+}
+
+.buscar input {
+width: 0px;
+height: 40px;
+padding: 0 20px;
+ font-size: 18px;
+ color: black;
+ outline: none;
+ border: 1px solid silver;
+ border-radius: 30px;
+transition: all 0.6s ease;
+}
+
+.btn .lupa {
+width: 55px;
+height: 55px;    
+line-height: 55px;
+position: absolute;
+top: 0%;
+right: 0%;
+background: #500ED0;
+text-align: center;
+color: white;
+font-size: 20px;
+border-radius: 50%;
+cursor:pointer;
+}
+
+.buscar:hover input{
+    width: 150px;
+}
+
+.buscar input:focus{
+    width: 150px;
 }

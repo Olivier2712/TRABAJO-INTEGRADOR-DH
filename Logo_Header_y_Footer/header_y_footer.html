@@ -13,7 +13,8 @@
     </head>
 
     <body>
-         
+         <div class="contenedor">
+
             <header>
                <img class="logo" src="../PNG_Logo_filmflix/filmflix.png" alt="">  
                 <nav class="menu-nav">
@@ -25,13 +26,15 @@
                           <li class="elementos-nav"> <a class="botones-nav" href=""> FAVORITOS </a> </li>
                       </ul>    
                 </nav>
-                <form class="form-header" action="search.php" method="GET">
-                    <fieldset class="fieldset-buscador">
-                        <input class="buscador" type="search" name="search" placeholder="Search">
-                        <input  class="lupa" type="image" src="../PNG_Logo_filmflix/lupa (1).png">
-                    </fieldset> 
 
-                </form>
+            <div class="buscar">
+                <input type="text" placeholder="Buscar" required>
+                <div class="btn">
+                <img class="lupa" src="../PNG_Logo_filmflix/lupa (1).png" alt="">
+                </div>
+            </div>            
+        </div>
+
             </header>
             
 
@@ -51,5 +54,7 @@
                      <p class="copy"> Copyright &copy;2021 FilmFlix</p>
                  </div>
             </footer>
-    </body>
+          
+        </div>    
+   </body>
 </html>
