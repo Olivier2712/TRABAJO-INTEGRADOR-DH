@@ -61,53 +61,7 @@
     background-color: #eaeaea;
     color: rgb(0, 0, 0);
     }
-
-    /*Parte Mati **/
-    .tit-gen{
-        display: flex;
-        margin-left : 45%;
-        text-decoration: none;
-        font-size: 200%;
-        color: black;
-        font-family:'Raleway', sans-serif;
-        color: #500ED0;
-    }
-.genbox{
-    display: flex;
-    margin-left: 30%;   
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:white;   
-}
-
-.seri{
-    display: flexbox;
-    margin-left: 30%;
-}
-.genlis{
-    display: flexbox;
-    margin: 5px;
-    text-decoration: none;
-   color: black;
-   list-style: none;
-   
-   
-}
-
-.t-pelis{
-    display: flexbox;
-    margin: 10px;
-    font-size: 150%;
-    background-color:grey;
-    border: double black;
-    text-align: center;
-}
-
-
-
-
-/** Termina**/
-
-
+    
     .footer {
         background-color:#500ED0;
         
@@ -145,3 +99,35 @@
     color: white;
     }
     
+
+
+/**Empieza Mati **/
+h1{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.island{
+    display:flexbox;
+    width: 300px;
+    background-color: red;
+    
+    
+}
+
+.box{
+    display: flexbox;
+    width: 250px;
+}
+ 
+.wick{
+    display: flexbox;
+    width: 300px;
+    background-color: green;
+}
+
+#ole{
+    list-style: none;
+    background-color: greenyellow;
+    text-decoration: none;
+    }
