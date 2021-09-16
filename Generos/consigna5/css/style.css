@@ -1,23 +1,40 @@
-.logo{
-    width: 250px;
-    display: inline-flex;
-    margin-top: 20px;
-    
-    
+.contenedor-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
     }
+    
+    
+    header {
+        background-color:#500ED0;
+        width: 100%;
+    }
+    
+    .logo{
+        width: 250px;
+        display: inline-flex;
+        margin-top: 20px;
+    }
+    
     .menu-nav{
         display:inline-flex ;
         justify-content: center;
-        margin-left: 250px;
+        margin-left: 250px;   
     }
+    
     .lista-nav{
     list-style: none;
-    
     }
     
     .elementos-nav {
         float: left;
         padding: 10px;
+    }
+    
+    
+    .elementos-nav:hover a{
+        color: black;    
     }
     
     .botones-nav{
@@ -27,78 +44,91 @@
     font-size:xx-large;
     }
     
-    header {
-        background-color:#500ED0;
+    .buscar {
+        position: absolute;
+        padding: 5px;  
+        display: inline-flex; 
+        margin-top: 55px;
+        margin-left: 350px;
+    }
+    
+    .buscar:hover input{
+        width: 150px;
     }
     
     
-    .elementos-nav:hover a{
-    color: black;    
+    .buscar input {
+        width: 0px;
+        height: 40px;
+        padding: 0 20px;
+         font-size: 18px;
+         color: black;
+         outline: none;
+         border: 1px solid silver;
+         border-radius: 30px;
+        transition: all 0.6s ease;
     }
     
-    .lupa{
-    vertical-align: middle;
-    width: 35px;
+    .buscar input:focus{
+        width: 150px;
     }
     
-    .form-header {
-    display:inline-flex ;
-    justify-content: flex-end;
-    font-size: x-large;
-    margin-left: 250px;
-    }
-    
-    .fieldset-buscador {
-        padding: 0px;
-        border: none;
-    }
-    
-    .buscador{
-    display: inline-block;
-    padding: 10px; 
-    border-radius: 4px; 
-    font-size: 18px;
-    background-color: #eaeaea;
-    color: rgb(0, 0, 0);
-    }
-    
-    .footer {
-        background-color:#500ED0;
-        
-    }
-    
-    .footer-tit {
+    .btn .lupa {
+        width: 55px;
+        height: 55px;    
+        line-height: 55px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background: #500ED0;
         text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: xx-large;
         color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor:pointer;
     }
     
-    .p1
-    {
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-size: medium;
-        color: white;
-    }
     
-    .social {
-        list-style: none;
-        display: inline-flex;
-        margin-left: 800px;
-    }
-    
-    .iconos{
-        
-        padding: 10px;
-    }
-    
-    .copy {
-    display: flex;
-    justify-content: center;    
-    color: white;
-    }
+
     
 .tit-pelis{
     color: black;
 }
+
+
+ 
+.footer{
+    background-color:#500ED0;
+width: 100%;    
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+
+.footer-message{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+.social {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 800px;
+}
+
+.iconos{ 
+    padding: 10px;
+}
+
+.copy {
+display: flex;
+justify-content: center;    
+color: white;
+}
+
