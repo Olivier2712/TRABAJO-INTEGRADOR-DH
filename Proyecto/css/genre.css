@@ -88,11 +88,48 @@
         cursor:pointer;
     }
     
+    .footer {
+        background-color:#500ED0;
+    width: 100%;    
+    }
     
-
+    h3 {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: xx-large;
+        color: white;
+    }
+    
+    .footer-message{
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: medium;
+        color: white;
+    }
+    
+    .social {
+        list-style: none;
+        display: inline-flex;
+        margin-left: 800px;
+    }
+    
+    .iconos{ 
+        padding: 10px;
+    }
+    
+    .copy {
+    display: flex;
+    justify-content: center;    
+    color: white;
+    }
+    
+    
+    
+/** Arranca Mati**/
     
     .tit-gen{
         display: flex;
+        flex-wrap: wrap;
         margin-left : 45%;
         text-decoration: none;
         font-size: 200%;
@@ -102,6 +139,7 @@
     }
 .genbox{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 30%;   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:white;   
@@ -114,23 +152,22 @@
 .genlis{
     display: flexbox;
     margin: 5px;
-    text-decoration: none;
-   color: black;
    list-style: none;
-   
-   
+   text-decoration: none;   
+   font-size: 120%;
 }
+
 
 .t-pelis{
     display: flexbox;
     margin: 10px;
-    font-size: 150%;
+    font-size: 200  %;
     background-color:grey;
     border: double black;
     text-align: center;
 }
 
-
+/**Termina Mati**/
  
 .footer{
     background-color:#500ED0;
