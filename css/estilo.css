@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+.tema1, .tema2, .tema3{
+    background-color: #5f00ed;
+}
+.tema1{
+    margin: 35px;
+}
+.tema2{
+    margin: 35px;
+}
+.tema3{
+    margin: 35px;
+}
+.img_series, .img_peliculas, .img_lo_mas_visto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img_series article, .img_peliculas article, .img_lo_mas_visto article{
+    width: 18%;
+    background-color: lawngreen;
+}
+
+div img{
+    width:100%;
+}
+
+.img_peliculas div{
+    
+}
