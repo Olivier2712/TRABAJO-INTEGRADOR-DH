@@ -108,7 +108,7 @@ h1{
 }
 
 .island{
-    display:flexbox;
+    display:flex;
     width: 300px;
     background-color: red;
     
@@ -116,18 +116,26 @@ h1{
 }
 
 .box{
-    display: flexbox;
     width: 250px;
 }
  
-.wick{
-    display: flexbox;
-    width: 300px;
-    background-color: green;
-}
 
 #ole{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 250px;
     list-style: none;
-    background-color: greenyellow;
+    background-color: white;
     text-decoration: none;
+
     }
+
+div img{
+        width: 100%;
+    }
+
+#ole li{
+    width: 20%;
+}

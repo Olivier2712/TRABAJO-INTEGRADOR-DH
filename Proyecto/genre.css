@@ -1,0 +1,169 @@
+.contenedor-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    }
+    
+    
+    header {
+        background-color:#500ED0;
+        width: 100%;
+    }
+    
+    .logo{
+        width: 250px;
+        display: inline-flex;
+        margin-top: 20px;
+    }
+    
+    .menu-nav{
+        display:inline-flex ;
+        justify-content: center;
+        margin-left: 250px;   
+    }
+    
+    .lista-nav{
+    list-style: none;
+    }
+    
+    .elementos-nav {
+        float: left;
+        padding: 10px;
+    }
+    
+    
+    .elementos-nav:hover a{
+        color: black;    
+    }
+    
+    .botones-nav{
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size:xx-large;
+    }
+    
+    .buscar {
+        position: absolute;
+        padding: 5px;  
+        display: inline-flex; 
+        margin-top: 55px;
+        margin-left: 350px;
+    }
+    
+    .buscar:hover input{
+        width: 150px;
+    }
+    
+    
+    .buscar input {
+        width: 0px;
+        height: 40px;
+        padding: 0 20px;
+         font-size: 18px;
+         color: black;
+         outline: none;
+         border: 1px solid silver;
+         border-radius: 30px;
+        transition: all 0.6s ease;
+    }
+    
+    .buscar input:focus{
+        width: 150px;
+    }
+    
+    .btn .lupa {
+        width: 55px;
+        height: 55px;    
+        line-height: 55px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background: #500ED0;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor:pointer;
+    }
+    
+    
+
+    
+    .tit-gen{
+        display: flex;
+        margin-left : 45%;
+        text-decoration: none;
+        font-size: 200%;
+        color: black;
+        font-family:'Raleway', sans-serif;
+        color: #500ED0;
+    }
+.genbox{
+    display: flex;
+    margin-left: 30%;   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:white;   
+}
+
+.seri{
+    display: flexbox;
+    margin-left: 30%;
+}
+.genlis{
+    display: flexbox;
+    margin: 5px;
+    text-decoration: none;
+   color: black;
+   list-style: none;
+   
+   
+}
+
+.t-pelis{
+    display: flexbox;
+    margin: 10px;
+    font-size: 150%;
+    background-color:grey;
+    border: double black;
+    text-align: center;
+}
+
+
+ 
+.footer{
+    background-color:#500ED0;
+width: 100%;    
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+
+.footer-message{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+.social {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 800px;
+}
+
+.iconos{ 
+    padding: 10px;
+}
+
+.copy {
+display: flex;
+justify-content: center;    
+color: white;
+}
+
