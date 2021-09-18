@@ -1,3 +1,5 @@
+/* Comienza css header */
+
 .contenedor-header {
     display: flex;
     flex-wrap: wrap;
@@ -88,7 +90,9 @@
         cursor:pointer;
     }
     
-
+    /* Termina css header */
+    
+    /* Comienza css main*/
 
 
     .sinopsis{
@@ -153,14 +157,33 @@
    }
 
 
+   .favoritos {
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    color:#500ED0;
+    display: flex;
+    flex-direction: column; 
+}
 
+.corazon-favoritos {
+margin-left: 100px;
+margin-top: 30px;   
+}
+
+  /*termina css main*/
    
-   .footer{
+  /* Comienza css footer */
+
+.footer {
     background-color:#500ED0;
 width: 100%;    
 }
 
-h3 {
+.boton-msj-footer {
+text-decoration: none;
+}
+
+.Footer-msj {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: xx-large;
@@ -190,3 +213,4 @@ justify-content: center;
 color: white;
 }
 
+/* Termina css footer */

@@ -1,5 +1,10 @@
 /* Comienza css header */
 
+body{
+    max-width: 2000px;     
+    margin: 0;   
+}
+
 .contenedor-header {
     display: flex;
     flex-wrap: wrap;
@@ -127,10 +132,17 @@ text-decoration: none;
 }
 
 .elemento-titulos-relacionados{
-width: 23%; 
-margin: 40px;
+width: 20%; 
+margin: 60px;
 }
 
+.resultados-no-encontrados{
+    display: none;
+}
+
+main{
+max-width: 1800px;    
+}
 
    /* termina css Main */
 
