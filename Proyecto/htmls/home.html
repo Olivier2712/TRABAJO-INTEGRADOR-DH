@@ -5,17 +5,51 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FilmFlix|Home</title>
-        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="../css/home.css">
     </head>
 
     <body>
+         
+      <div class="contenedor-header">
+
+          <header>
+
+            <a href="../htmls/home.html"> <img class="logo" src="../img/filmflix.png" alt="">  </a>
+              <nav class="menu-nav">
+                    <ul class="lista-nav">
+                        <li class="elementos-nav"> <a class="botones-nav" href="../htmls/home.html"> HOME </a> </li>
+                        <li class="elementos-nav"> <a class="botones-nav" href="../htmls/genre.html"> GÉNEROS </a> </li>
+                        <li class="elementos-nav"> <a class="botones-nav" href="../htmls/movie_detail.html"> PELICULAS </a> </li>
+                        <li class="elementos-nav"> <a class="botones-nav" href="../htmls/series_detail.html"> SERIES </a> </li>
+                        <li class="elementos-nav"> <a class="botones-nav" href="../htmls/favoritos.html"> FAVORITOS </a> </li>
+                    </ul>    
+              </nav>
+
+          <div class="buscar">
+              <form action="../htmls/search-results.html">
+                  <input type="text" placeholder="Buscar" required>
+                      <div class="btn">
+                          <img class="lupa" src="../img/lupa (1).png" alt="">
+                      </div>
+              </form>
+
+          </div>   
+
+      </div>
+
+          </header>
+      
+
+      
+      <main>
+
         <h1 class="tema1">
             Series populares
         </h1>
           <div class="img_series">
               <article>
                   <div>
-                      <img src="./img/lucifer.jpg" 
+                      <img src="../img/lucifer.jpg" 
                       alt="Lucifer" >
                   </div>
                       <h3>Lucifer</h3>
@@ -24,7 +58,7 @@
 
                <article>
                  <div>
-                    <img src="./img/the_office.jpg" 
+                    <img src="../img/the_office.jpg" 
                     alt="The Office">
                  </div>
                     <h3>The Office</h3>
@@ -33,7 +67,7 @@
 
                <article>
                  <div>
-                    <img src="./img/blacklist.jpg"
+                    <img src="../img/blacklist.jpg"
                     alt="Blacklist">
                  </div>
                      <h3>Blacklist</h3>
@@ -42,7 +76,7 @@
 
                <article>
                    <div>
-                      <img src="./img/blindspot.jpg" 
+                      <img src="../img/blindspot.jpg" 
                       alt="Blindspot">
                    </div>
                       <h3>Blindspot</h3>
@@ -51,7 +85,7 @@
 
                <article>
                     <div> 
-                        <img src="./img/break_bad.jpg"
+                        <img src="../img/break_bad.jpg"
                         alt="Breaking Bad">
                     </div>
                        <h3>Breaking Bad</h3>
@@ -65,7 +99,7 @@
           <div class="img_peliculas">
             <article>
                   <div>
-                    <img src="./img/la_isla_siniestra.jpg" 
+                    <img src="../img/la_isla_siniestra.jpg" 
                     alt="La isla siniestra" >
                   </div>
                       <h3>La isla siniestra</h3>
@@ -74,7 +108,7 @@
 
              <article>
                    <div>
-                      <img src="./img/guerra_de_novias.jpg" 
+                      <img src="../img/guerra_de_novias.jpg" 
                       alt="Guerra de novias">
                    </div>
                        <h3>Guerra de novias</h3>
@@ -83,7 +117,7 @@
 
              <article>
                    <div>
-                     <img src="./img/la_la_land.jpg"
+                     <img src="../img/la_la_land.jpg"
                      alt="La la land">
                    </div>
                        <h3>La la land</h3>
@@ -92,7 +126,7 @@
 
              <article>
                    <div>
-                     <img src="./img/topgun.jpg" 
+                     <img src="../img/topgun.jpg" 
                      alt="Top Gun">
                    </div>
                        <h3>Top Gun</h3>
@@ -101,7 +135,7 @@
 
              <article>
                    <div>
-                     <img src="./img/bajo_la_misma_estrella.jpg"
+                     <img src="../img/bajo_la_misma_estrella.jpg"
                      alt="Bajo la misma estrella">
                    </div>
                        <h3>Bajo la misma estrella</h3>
@@ -115,7 +149,7 @@
           <div class="img_lo_mas_visto">
             <article>
                   <div>
-                    <img src="./img/casa_d_papel.jpg" 
+                    <img src="../img/casa_d_papel.jpg" 
                     alt="La casa de papel" >
                   </div>
                     <h3>La casa de papel</h3>
@@ -124,7 +158,7 @@
 
              <article>
                    <div>
-                     <img src="./img/lucifer.jpg" 
+                     <img src="../img/lucifer.jpg" 
                      alt="Lucifer">
                    </div>
                       <h3>Lucifer</h3>
@@ -133,7 +167,7 @@
 
              <article>
                   <div>
-                     <img src="./img/suits.jpg"
+                     <img src="../img/suits.jpg"
                      alt="Suits">
                   </div>
                       <h3>Suits</h3>
@@ -142,7 +176,7 @@
 
              <article>
                   <div>
-                     <img src="./img/vikingos.jpg.jpg" 
+                     <img src="../img/vikingos.jpg.jpg" 
                      alt="Vikingos">
                   </div>
                       <h3>Vikingos</h3>
@@ -151,12 +185,34 @@
 
              <article>
                   <div>
-                     <img src="./img/vis_a_vis.jpg.jpg"
+                     <img src="../img/vis_a_vis.jpg.jpg"
                      alt="Vis a Vis">
                   </div>
                       <h3>Vis a Vis</h3>
                       <h4>Fecha de estreno: 20/04/2015</h4>
             </article>
           </div>
-    </body>
+
+        </main>
+        <footer>
+
+          <div class="footer">
+
+              <a class="boton-msj-footer" href="../htmls/home.html"> <h3 class="Footer-msj">FilmFlix</h3> </a>
+                  <p class="footer-message"> El mejor sitio de streaming para tu contenido favorito!</p>
+                  
+                       <ul class="social">
+                           <li class="iconos"> <a href=""> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSIiIGQ9Ik00NDgsMEg2NEMyOC43MDQsMCwwLDI4LjcwNCwwLDY0djM4NGMwLDM1LjI5NiwyOC43MDQsNjQsNjQsNjRoMzg0YzM1LjI5NiwwLDY0LTI4LjcwNCw2NC02NFY2NCAgQzUxMiwyOC43MDQsNDgzLjI5NiwwLDQ0OCwweiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzE5NzZkMiIgY2xhc3M9IiI+PC9wYXRoPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHN0eWxlPSIiIGQ9Ik00MzIsMjU2aC04MHYtNjRjMC0xNy42NjQsMTQuMzM2LTE2LDMyLTE2aDMyVjk2aC02NGwwLDBjLTUzLjAyNCwwLTk2LDQyLjk3Ni05Niw5NnY2NGgtNjR2ODBoNjQgIHYxNzZoOTZWMzM2aDQ4TDQzMiwyNTZ6IiBmaWxsPSIjNWYwMGRkIiBkYXRhLW9yaWdpbmFsPSIjZmFmYWZhIiBjbGFzcz0iIj48L3BhdGg+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" width="30px"> </i> </a> </li>
+                           <li class="iconos"> <a href=""> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1NiAwYy0xNDEuMzYzMjgxIDAtMjU2IDExNC42MzY3MTktMjU2IDI1NnMxMTQuNjM2NzE5IDI1NiAyNTYgMjU2IDI1Ni0xMTQuNjM2NzE5IDI1Ni0yNTYtMTE0LjYzNjcxOS0yNTYtMjU2LTI1NnptMTE2Ljg4NjcxOSAxOTkuNjAxNTYyYy4xMTMyODEgMi41MTk1MzIuMTY3OTY5IDUuMDUwNzgyLjE2Nzk2OSA3LjU5Mzc1IDAgNzcuNjQ0NTMyLTU5LjEwMTU2MyAxNjcuMTc5Njg4LTE2Ny4xODM1OTQgMTY3LjE4MzU5NGguMDAzOTA2LS4wMDM5MDZjLTMzLjE4MzU5NCAwLTY0LjA2MjUtOS43MjY1NjItOTAuMDY2NDA2LTI2LjM5NDUzMSA0LjU5NzY1Ni41NDI5NjkgOS4yNzczNDMuODEyNSAxNC4wMTU2MjQuODEyNSAyNy41MzEyNSAwIDUyLjg2NzE4OC05LjM5MDYyNSA3Mi45ODA0NjktMjUuMTUyMzQ0LTI1LjcyMjY1Ni0uNDc2NTYyLTQ3LjQxMDE1Ni0xNy40NjQ4NDMtNTQuODk0NTMxLTQwLjgxMjUgMy41ODIwMzEuNjg3NSA3LjI2NTYyNSAxLjA2MjUgMTEuMDQyOTY5IDEuMDYyNSA1LjM2MzI4MSAwIDEwLjU1ODU5My0uNzIyNjU2IDE1LjQ5NjA5My0yLjA3MDMxMi0yNi44ODY3MTgtNS4zODI4MTMtNDcuMTQwNjI0LTI5LjE0NDUzMS00Ny4xNDA2MjQtNTcuNTk3NjU3IDAtLjI2NTYyNCAwLS41MDM5MDYuMDA3ODEyLS43NSA3LjkxNzk2OSA0LjQwMjM0NCAxNi45NzI2NTYgNy4wNTA3ODIgMjYuNjEzMjgxIDcuMzQ3NjU3LTE1Ljc3NzM0My0xMC41MjczNDQtMjYuMTQ4NDM3LTI4LjUyMzQzOC0yNi4xNDg0MzctNDguOTEwMTU3IDAtMTAuNzY1NjI0IDIuOTEwMTU2LTIwLjg1MTU2MiA3Ljk1NzAzMS0yOS41MzUxNTYgMjguOTc2NTYzIDM1LjU1NDY4OCA3Mi4yODEyNSA1OC45Mzc1IDEyMS4xMTcxODcgNjEuMzk0NTMyLTEuMDA3ODEyLTQuMzA0Njg4LTEuNTI3MzQzLTguNzg5MDYzLTEuNTI3MzQzLTEzLjM5ODQzOCAwLTMyLjQzNzUgMjYuMzE2NDA2LTU4Ljc1MzkwNiA1OC43NjU2MjUtNTguNzUzOTA2IDE2LjkwMjM0NCAwIDMyLjE2Nzk2OCA3LjE0NDUzMSA0Mi44OTA2MjUgMTguNTY2NDA2IDEzLjM4NjcxOS0yLjY0MDYyNSAyNS45NTcwMzEtNy41MzEyNSAzNy4zMTI1LTE0LjI2MTcxOS00LjM5NDUzMSAxMy43MTQ4NDQtMTMuNzA3MDMxIDI1LjIyMjY1Ny0yNS44Mzk4NDQgMzIuNSAxMS44ODY3MTktMS40MjE4NzUgMjMuMjE0ODQ0LTQuNTc0MjE5IDMzLjc0MjE4Ny05LjI1MzkwNi03Ljg2MzI4MSAxMS43ODUxNTYtMTcuODM1OTM3IDIyLjEzNjcxOS0yOS4zMDg1OTMgMzAuNDI5Njg3em0wIDAiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+" width="30px">  </a> </li>
+                           <li class="iconos"> <a href=""> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTMwMSAyNTZjMCAyNC44NTE1NjItMjAuMTQ4NDM4IDQ1LTQ1IDQ1cy00NS0yMC4xNDg0MzgtNDUtNDUgMjAuMTQ4NDM4LTQ1IDQ1LTQ1IDQ1IDIwLjE0ODQzOCA0NSA0NXptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMzMyIDEyMGgtMTUyYy0zMy4wODU5MzggMC02MCAyNi45MTQwNjItNjAgNjB2MTUyYzAgMzMuMDg1OTM4IDI2LjkxNDA2MiA2MCA2MCA2MGgxNTJjMzMuMDg1OTM4IDAgNjAtMjYuOTE0MDYyIDYwLTYwdi0xNTJjMC0zMy4wODU5MzgtMjYuOTE0MDYyLTYwLTYwLTYwem0tNzYgMjExYy00MS4zNTU0NjkgMC03NS0zMy42NDQ1MzEtNzUtNzVzMzMuNjQ0NTMxLTc1IDc1LTc1IDc1IDMzLjY0NDUzMSA3NSA3NS0zMy42NDQ1MzEgNzUtNzUgNzV6bTg2LTE0NmMtOC4yODUxNTYgMC0xNS02LjcxNDg0NC0xNS0xNXM2LjcxNDg0NC0xNSAxNS0xNSAxNSA2LjcxNDg0NCAxNSAxNS02LjcxNDg0NCAxNS0xNSAxNXptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMzc3IDBoLTI0MmMtNzQuNDM3NSAwLTEzNSA2MC41NjI1LTEzNSAxMzV2MjQyYzAgNzQuNDM3NSA2MC41NjI1IDEzNSAxMzUgMTM1aDI0MmM3NC40Mzc1IDAgMTM1LTYwLjU2MjUgMTM1LTEzNXYtMjQyYzAtNzQuNDM3NS02MC41NjI1LTEzNS0xMzUtMTM1em00NSAzMzJjMCA0OS42MjUtNDAuMzc1IDkwLTkwIDkwaC0xNTJjLTQ5LjYyNSAwLTkwLTQwLjM3NS05MC05MHYtMTUyYzAtNDkuNjI1IDQwLjM3NS05MCA5MC05MGgxNTJjNDkuNjI1IDAgOTAgNDAuMzc1IDkwIDkwem0wIDAiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+" width="30px"> </a> </li> 
+                           <li class="iconos"> <a href=""> <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSI0NDgsMjI0IDQ0OCwxNjAgNDE2LDE2MCA0MTYsMjI0IDM1MiwyMjQgMzUyLDI1NiA0MTYsMjU2IDQxNiwzMjAgNDQ4LDMyMCA0NDgsMjU2IDUxMiwyNTYgNTEyLDIyNCAgICIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wb2x5Z29uPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMTYwLDIyNHY2NGg5MC41MjhjLTEzLjIxNiwzNy4yNDgtNDguOCw2NC05MC41MjgsNjRjLTUyLjkyOCwwLTk2LTQzLjA3Mi05Ni05NmMwLTUyLjkyOCw0My4wNzItOTYsOTYtOTYgICAgYzIyLjk0NCwwLDQ1LjAyNCw4LjIyNCw2Mi4xNzYsMjMuMTY4bDQyLjA0OC00OC4yNTZDMjM1LjQyNCwxMDkuODI0LDE5OC40MzIsOTYsMTYwLDk2QzcxLjc3Niw5NiwwLDE2Ny43NzYsMCwyNTYgICAgczcxLjc3NiwxNjAsMTYwLDE2MHMxNjAtNzEuNzc2LDE2MC0xNjB2LTMySDE2MHoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" width="30px"> </a> </li> 
+                       </ul>
+       
+                  <p class="copy"> Copyright &copy;2021 FilmFlix</p>
+         </div>
+       
+       </footer>
+
+</body>
+
 </html>
