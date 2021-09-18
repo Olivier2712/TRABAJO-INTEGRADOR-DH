@@ -118,15 +118,37 @@
 
 .img_series article, .img_peliculas article, .img_lo_mas_visto article{
     width: 18%;
-    background-color: lawngreen;
+    background-color: #500ed0;
 }
 
 div img{
     width:100%;
 }
 
-.img_peliculas div{
-    
+.img_series div, .img_peliculas div, .img_lo_mas_visto div{
+    padding: 20px;
+}
+
+h1{
+    text-align:start;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+}
+
+h3{
+    text-decoration-line: underline;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+h4{
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
  /* Termina css de Aldi*/
