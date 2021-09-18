@@ -1,3 +1,5 @@
+/* Comienza css header */
+
 .contenedor-header {
 display: flex;
 flex-wrap: wrap;
@@ -88,6 +90,10 @@ font-size:xx-large;
     cursor:pointer;
 }
 
+/* Termina css header */
+
+/* Comienza css footer */
+
 .footer {
     background-color:#500ED0;
 width: 100%;    
@@ -123,3 +129,4 @@ justify-content: center;
 color: white;
 }
 
+/* Termina css footer */

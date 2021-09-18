@@ -1,0 +1,128 @@
+.contenedor-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    }
+    
+    
+    header {
+        background-color:#500ED0;
+        width: 100%;
+    }
+    
+    .logo{
+        width: 250px;
+        display: inline-flex;
+        margin-top: 20px;
+    }
+    
+    .menu-nav{
+        display:inline-flex ;
+        justify-content: center;
+        margin-left: 250px;   
+    }
+    
+    .lista-nav{
+    list-style: none;
+    }
+    
+    .elementos-nav {
+        float: left;
+        padding: 10px;
+    }
+    
+    
+    .elementos-nav:hover a{
+        color: black;    
+    }
+    
+    .botones-nav{
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size:xx-large;
+    }
+    
+    .buscar {
+        position: absolute;
+        padding: 5px;  
+        display: inline-flex; 
+        margin-top: 55px;
+        margin-left: 350px;
+    }
+    
+    .buscar:hover input{
+        width: 150px;
+    }
+    
+    
+    .buscar input {
+        width: 0px;
+        height: 40px;
+        padding: 0 20px;
+         font-size: 18px;
+         color: black;
+         outline: none;
+         border: 1px solid silver;
+         border-radius: 30px;
+        transition: all 0.6s ease;
+    }
+    
+    .buscar input:focus{
+        width: 150px;
+    }
+    
+    .btn .lupa {
+        width: 55px;
+        height: 55px;    
+        line-height: 55px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background: #500ED0;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor:pointer;
+    }
+
+
+
+    .footer {
+        background-color:#500ED0;
+    width: 100%;    
+    }
+    
+    h3 {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: xx-large;
+        color: white;
+    }
+    
+    .footer-message{
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: medium;
+        color: white;
+    }
+    
+    .social {
+        list-style: none;
+        display: inline-flex;
+        margin-left: 800px;
+    }
+    
+    .iconos{ 
+        padding: 10px;
+    }
+    
+    .copy {
+    display: flex;
+    justify-content: center;    
+    color: white;
+    }
+    
+    
