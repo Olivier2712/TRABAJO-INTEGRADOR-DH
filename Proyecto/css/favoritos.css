@@ -91,7 +91,34 @@
     }
     
     /* Termina css header */
+   
+    /*  Comienza el main  */
+
+
+    h1{
+        text-align: start;
+        text-decoration: none;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        padding: 15px;
+        background-color: #500ED0;
+    }
     
+    p{
+        text-align:start;
+        text-decoration: none;
+        color:black;
+        font-family: 'Raleway', sans-serif;
+        padding: 15px;
+        }
+    }
+
+
+
+
+
+    /*  Termina el main   */
+
    /* Comienza css footer */
 
 .footer {
