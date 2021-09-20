@@ -1,5 +1,7 @@
 /* Comienza css header */
-
+body{
+    margin: 0%;
+}
 .contenedor-header {
     display: flex;
     flex-wrap: wrap;
@@ -93,10 +95,22 @@
     /* Termina css header */
     
 
-/**Empieza Mati **/
+/**Empieza Main **/
 h1{
-    font-size: 50px;
+    margin-left: 10px;
+    font-size: 40px;
     font-family: 'Raleway', sans-serif;
+    color: #500ED0;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .island{
@@ -108,7 +122,9 @@ h1{
 }
 
 .box{
-    width: 250px;
+    margin-left: -15%;
+    text-align: center;
+    width: 70%;
 }
  
 
@@ -127,10 +143,10 @@ h1{
 
 
 #ole li{
-    width: 20%;
+    width: 25%;
 }
 
-   /**Termina mati**/
+   /**Termina main**/
 
 
    /* Comienza css footer */
@@ -177,3 +193,36 @@ color: white;
 /* Termina css footer */
 
 
+/** Empieza el responsive**/
+
+@media(max-width: 768PX){
+    body{
+        margin: 0%;
+    }
+    p{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        text-justify: newspaper;
+        margin-left: 20px;
+    }
+    h2{
+      text-align: center;
+      margin-left: 23%;
+    }
+
+    #ole {
+        width: 100%;
+        margin-left: 23%;
+        margin-right: 8%;
+    }
+
+    #ole li{
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    #top{
+        width: 80%;
+    }
+}

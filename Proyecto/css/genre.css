@@ -96,11 +96,9 @@
 /** Arranca Mati**/
     
 .tit-gen{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left : 45%;
+    text-align: center;
     text-decoration: none;
-    font-size: 200%;
+    font-size: 250%;
     color: black;
     font-family:'Raleway', sans-serif;
     color: #500ED0;
@@ -218,4 +216,11 @@ color: white;
 
 /* Termina css footer */
     
-    
+/** Empieza el responsive**/
+@media(max-width: 768PX){
+    .genbox{
+        margin-left:15%;
+
+    }
+
+}
