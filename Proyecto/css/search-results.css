@@ -198,6 +198,13 @@ main{
 max-width: 1800px;    
 }
 
+.nombres-resultados{
+    color: #500ED0;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-Large;
+    text-align: center;
+     
+}
    /* termina css Main */
 
 
