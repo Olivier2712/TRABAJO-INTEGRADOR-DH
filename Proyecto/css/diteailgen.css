@@ -1,59 +1,71 @@
-/* Comienza css header */
+
 body{
-    margin: 0%;
+    margin: 0;
 }
-.contenedor-header {
+
+header{
+    width: 100% auto;
     display: flex;
+    background-color: #500ed0;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav{
+    float: left;
+    display: flex;
+    flex-direction: row;  
+}
+
+  
+
+
+.logo{
+width: 100%;
+margin-left: 2%;
+margin-top: 2%;
+margin-bottom: 2%;
+margin-right: 0;
+}
+
+
+
+
+
+.lista-nav {
+display: flex;
+flex-direction: row;
+list-style: none;
+width: 100%;
+margin-left: 25%;
+}
+
+.elementos-nav{
+    
     width: 100%;
-    }
-    
-    
-    header {
-        background-color:#500ED0;
-        width: 100%;
-    }
-    
-    .logo{
-        width: 250px;
-        display: inline-flex;
-        margin-top: 20px;
-    }
-    
-    .menu-nav{
-        display:inline-flex ;
-        justify-content: center;
-        margin-left: 250px;   
-    }
-    
-    .lista-nav{
-    list-style: none;
-    }
-    
-    .elementos-nav {
-        float: left;
-        padding: 10px;
-    }
-    
-    
-    .elementos-nav:hover a{
-        color: black;    
-    }
-    
-    .botones-nav{
+    padding: 5px;
+}
+
+.elementos-nav:hover a{
+    color: black;    
+}
+
+.botones-nav{
     text-decoration: none;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size:xx-large;
+    font-size:x-large;
     }
-    
+
+
+
+@media (min-width:1001px) {
     .buscar {
         position: absolute;
         padding: 5px;  
-        display: inline-flex; 
-        margin-top: 55px;
-        margin-left: 350px;
+        display: flex; 
+        margin-top: 0.5%;
+        margin-left: 85%;
     }
     
     .buscar:hover input{
@@ -91,9 +103,102 @@ body{
         border-radius: 50%;
         cursor:pointer;
     }
-    
-    /* Termina css header */
-    
+}
+    /* CSS Header @media monitor FIN*/
+
+
+    /* CSS Header @media tablet COMIENZO*/
+
+@media ( max-width:1000px) {
+
+nav a{
+    width: 150px;
+    margin-top: 15px;
+}
+
+.lista-nav{
+margin-left: -20px;    
+width: 100%;
+}
+
+.elementos-nav{
+    width: 100%;
+    padding: 1%;   
+}
+
+.botones-nav{
+font-size: medium;   
+}
+
+.lupa {
+    width: 30px;
+}
+
+.buscar form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.buscar form input{
+    width: 50%;
+    margin-top: 2%;
+}
+}
+
+/* CSS Header @media tablet FIN*/
+
+
+/*CSS Footer @media monitor y tablet INICIO*/
+.footer {
+    background-color:#500ED0;
+width: 100%;   
+display: flex; 
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.boton-msj-footer {
+text-decoration: none;
+}
+
+.Footer-msj {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: white;
+}
+
+.footer-message{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.iconos{ 
+    padding: 10px;
+}
+
+.copy {
+display: flex;
+justify-content: center;    
+color: white;
+}
+
+/*CSS Footer @media monitor y tablet FIN*/
+
+
 
 /**Empieza Main **/
 h1{
@@ -149,72 +254,24 @@ p{
    /**Termina main**/
 
 
-   /* Comienza css footer */
-
-.footer {
-    background-color:#500ED0;
-width: 100%;    
-}
-
-.boton-msj-footer {
-text-decoration: none;
-}
-
-.Footer-msj {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: xx-large;
-    color: white;
-}
-
-.footer-message{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: medium;
-    color: white;
-}
-
-.social {
-    list-style: none;
-    display: inline-flex;
-    margin-left: 800px;
-}
-
-.iconos{ 
-    padding: 10px;
-}
-
-.copy {
-display: flex;
-justify-content: center;    
-color: white;
-}
-
-/* Termina css footer */
-
-
 /** Empieza el responsive**/
 
 @media(max-width: 768PX){
-    body{
-        margin: 0%;
-    }
-    p{
+    .parrafobox{
         width: 100%;
         font-size: 14px;
         text-align: center;
-        text-justify: newspaper;
-        margin-left: 20px;
+        margin:auto
+        
     }
     h2{
-      text-align: center;
-      margin-left: 23%;
+        text-align: center;
+      margin-left: 90px;
     }
 
     #ole {
         width: 100%;
-        margin-left: 23%;
-        margin-right: 8%;
+        margin-left: 15%;
     }
 
     #ole li{
