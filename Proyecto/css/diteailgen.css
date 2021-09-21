@@ -1,57 +1,71 @@
-/* Comienza css header */
 
-.contenedor-header {
+body{
+    margin: 0;
+}
+
+header{
+    width: 100% auto;
     display: flex;
+    background-color: #500ed0;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav{
+    float: left;
+    display: flex;
+    flex-direction: row;  
+}
+
+  
+
+
+.logo{
+width: 100%;
+margin-left: 2%;
+margin-top: 2%;
+margin-bottom: 2%;
+margin-right: 0;
+}
+
+
+
+
+
+.lista-nav {
+display: flex;
+flex-direction: row;
+list-style: none;
+width: 100%;
+margin-left: 25%;
+}
+
+.elementos-nav{
+    
     width: 100%;
-    }
-    
-    
-    header {
-        background-color:#500ED0;
-        width: 100%;
-    }
-    
-    .logo{
-        width: 250px;
-        display: inline-flex;
-        margin-top: 20px;
-    }
-    
-    .menu-nav{
-        display:inline-flex ;
-        justify-content: center;
-        margin-left: 250px;   
-    }
-    
-    .lista-nav{
-    list-style: none;
-    }
-    
-    .elementos-nav {
-        float: left;
-        padding: 10px;
-    }
-    
-    
-    .elementos-nav:hover a{
-        color: black;    
-    }
-    
-    .botones-nav{
+    padding: 5px;
+}
+
+.elementos-nav:hover a{
+    color: black;    
+}
+
+.botones-nav{
     text-decoration: none;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size:xx-large;
+    font-size:x-large;
     }
-    
+
+
+
+@media (min-width:1001px) {
     .buscar {
         position: absolute;
         padding: 5px;  
-        display: inline-flex; 
-        margin-top: 55px;
-        margin-left: 350px;
+        display: flex; 
+        margin-top: 0.5%;
+        margin-left: 85%;
     }
     
     .buscar:hover input{
@@ -89,55 +103,61 @@
         border-radius: 50%;
         cursor:pointer;
     }
-    
-    /* Termina css header */
-    
+}
+    /* CSS Header @media monitor FIN*/
 
-/**Empieza Mati **/
-h1{
-    font-size: 50px;
-    font-family: 'Raleway', sans-serif;
+
+    /* CSS Header @media tablet COMIENZO*/
+
+@media ( max-width:1000px) {
+
+nav a{
+    width: 150px;
+    margin-top: 15px;
 }
 
-.island{
-    display:flex;
-    width: 300px;
-    background-color: red;
-    
-    
+.lista-nav{
+margin-left: -20px;    
+width: 100%;
 }
 
-.box{
-    width: 250px;
+.elementos-nav{
+    width: 100%;
+    padding: 1%;   
 }
- 
 
-#ole{
+.botones-nav{
+font-size: medium;   
+}
+
+.lupa {
+    width: 30px;
+}
+
+.buscar form{
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 250px;
-    list-style: none;
-    background-color: white;
-    text-decoration: none;
-
-    }
-
-
-
-#ole li{
-    width: 20%;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
-   /**Termina mati**/
+.buscar form input{
+    width: 50%;
+    margin-top: 2%;
+}
+}
+
+/* CSS Header @media tablet FIN*/
 
 
-   /* Comienza css footer */
-
+/*CSS Footer @media monitor y tablet INICIO*/
 .footer {
     background-color:#500ED0;
-width: 100%;    
+width: 100%;   
+display: flex; 
+flex-wrap: wrap;
+flex-direction: column;
 }
 
 .boton-msj-footer {
@@ -160,8 +180,10 @@ text-decoration: none;
 
 .social {
     list-style: none;
-    display: inline-flex;
-    margin-left: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .iconos{ 
@@ -174,6 +196,90 @@ justify-content: center;
 color: white;
 }
 
-/* Termina css footer */
+/*CSS Footer @media monitor y tablet FIN*/
 
 
+
+/**Empieza Main **/
+h1{
+    margin-left: 10px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    color: #500ED0;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.island{
+    display:flex;
+    width: 300px;
+    background-color: red;
+    
+    
+}
+
+.box{
+    margin-left: -15%;
+    text-align: center;
+    width: 70%;
+}
+ 
+
+#ole{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 250px;
+    list-style: none;
+    background-color: white;
+    text-decoration: none;
+
+    }
+
+
+
+#ole li{
+    width: 25%;
+}
+
+   /**Termina main**/
+
+
+/** Empieza el responsive**/
+
+@media(max-width: 768PX){
+    .parrafobox{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        margin:auto
+        
+    }
+    h2{
+        text-align: center;
+      margin-left: 90px;
+    }
+
+    #ole {
+        width: 100%;
+        margin-left: 15%;
+    }
+
+    #ole li{
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    #top{
+        width: 80%;
+    }
+}

@@ -1,57 +1,72 @@
-/* Comienza css header */
+/** CSS Header @media monitor INICIO **/
 
-.contenedor-header {
+body{
+    margin: 0;
+}
+
+header{
+    width: 100% auto;
     display: flex;
+    background-color: #500ed0;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav{
+    float: left;
+    display: flex;
+    flex-direction: row;  
+}
+
+  
+
+
+.logo{
+width: 100%;
+margin-left: 2%;
+margin-top: 2%;
+margin-bottom: 2%;
+margin-right: 0;
+}
+
+
+
+
+
+.lista-nav {
+display: flex;
+flex-direction: row;
+list-style: none;
+width: 100%;
+margin-left: 25%;
+}
+
+.elementos-nav{
+    
     width: 100%;
-    }
-    
-    
-    header {
-        background-color:#500ED0;
-        width: 100%;
-    }
-    
-    .logo{
-        width: 250px;
-        display: inline-flex;
-        margin-top: 20px;
-    }
-    
-    .menu-nav{
-        display:inline-flex ;
-        justify-content: center;
-        margin-left: 250px;   
-    }
-    
-    .lista-nav{
-    list-style: none;
-    }
-    
-    .elementos-nav {
-        float: left;
-        padding: 10px;
-    }
-    
-    
-    .elementos-nav:hover a{
-        color: black;    
-    }
-    
-    .botones-nav{
+    padding: 5px;
+}
+
+.elementos-nav:hover a{
+    color: black;    
+}
+
+.botones-nav{
     text-decoration: none;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size:xx-large;
+    font-size:x-large;
     }
-    
+
+
+
+@media (min-width:1001px) {
     .buscar {
         position: absolute;
         padding: 5px;  
-        display: inline-flex; 
-        margin-top: 55px;
-        margin-left: 350px;
+        display: flex; 
+        margin-top: 0.5%;
+        margin-left: 85%;
     }
     
     .buscar:hover input{
@@ -89,64 +104,136 @@
         border-radius: 50%;
         cursor:pointer;
     }
-    
-    /* Termina css header */
-    
-    /* Comienza css main*/
+}
+    /* CSS Header @media monitor FIN*/
 
+
+    /* CSS Header @media tablet COMIENZO*/
+
+@media ( max-width:1000px) {
+
+nav a{
+    width: 150px;
+    margin-top: 15px;
+}
+
+.lista-nav{
+margin-left: -20px;    
+width: 100%;
+}
+
+.elementos-nav{
+    width: 100%;
+    padding: 1%;   
+}
+
+.botones-nav{
+font-size: medium;   
+}
+
+.lupa {
+    width: 30px;
+}
+
+.buscar form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.buscar form input{
+    width: 50%;
+    margin-top: 2%;
+}
+}
+
+/* CSS Header @media tablet FIN*/
+
+    /*comienza css main*/
+
+    main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    }
+
+    .peli-sinopsis{
+    display: flex;
+    flex-direction: row;
+    }
+
+    .img-isla{
+       width: 75%;
+       margin-left: 5%;
+       margin-top: 1%;  
+       margin-right: 1%;
+    }
+
+    .sinopsis-contenedor{
+        display: flex;
+        flex-direction: column;
+
+ }
 
     .sinopsis{
         display:flex;
-        text-align: left;
         font-family: 'Raleway', sans-serif;
-        font-size: xx-large;
+        font-size: x-large;
         color:#500ED0;
-        margin-left: 20px;
+        
     }
 
-    .texto-sinopsis{
-        margin-left: 20px;
-        margin-right: 450px; 
+    .texto-sinopsis {
+        
         font-family: 'Lato', sans-serif;
         font-size: large;
+
     }
 
-   .img-sinopsis{
-   display: flex;  
-   margin-top: 20px;
-   margin-left: 400px;
-   }
+
+
+
 
    .info {
-   display: flex; 
-   flex-direction: row;
-   justify-content: space-between;   
-   margin-left: 550px;
+   display: flex;
+flex-direction: column;    
+   flex-wrap: wrap;
    }
-   
+
    .nombre-pelicula {
     font-family: 'Raleway', sans-serif;
     font-size: xx-large;
     color:#500ED0;
-    margin-left: 800px;
-    margin-right: 800px;
-   }
+    margin-left: 40%;
+}
+
+   .info-abajo {
+   display: flex;
+   flex-direction: row;    
+   justify-content: center;
+   justify-content: space-between;
+}
+   
 
 
    .rating{
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     color:#500ED0;
+    margin-left: 5%;
    }
 
    .mas-info {
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
-    color:#500ED0;
+    color:#500ED0; 
+    margin-right: 5%;
    }
+
    .info-peli {
-    margin-left: 20px;
-    margin-right: 450px; 
     font-family: 'Lato', sans-serif;
     font-size: large;
     color: black;
@@ -156,8 +243,7 @@
    font-weight: bolder;    
    }
 
-
-   .favoritos {
+.favoritos {
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     color:#500ED0;
@@ -170,13 +256,24 @@ margin-left: 100px;
 margin-top: 30px;   
 }
 
+@media ( max-width:1000px) {
+.peli-sinopsis{
+display: flex;
+flex-direction: column;    
+}
+
+}
+ 
+
   /*termina css main*/
    
-  /* Comienza css footer */
-
+/*CSS Footer @media monitor y tablet INICIO*/
 .footer {
     background-color:#500ED0;
-width: 100%;    
+width: 100%;   
+display: flex; 
+flex-wrap: wrap;
+flex-direction: column;
 }
 
 .boton-msj-footer {
@@ -199,8 +296,10 @@ text-decoration: none;
 
 .social {
     list-style: none;
-    display: inline-flex;
-    margin-left: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .iconos{ 
@@ -213,4 +312,6 @@ justify-content: center;
 color: white;
 }
 
-/* Termina css footer */
+/*CSS Footer @media monitor y tablet FIN*/
+
+
