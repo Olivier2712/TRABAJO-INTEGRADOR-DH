@@ -239,6 +239,10 @@ flex-direction: column;
     color: black;
    }
 
+   a {
+    text-decoration: none;
+   }
+
    .negrita{
    font-weight: bolder;    
    }
@@ -251,9 +255,13 @@ flex-direction: column;
     flex-direction: column; 
 }
 
-.corazon-favoritos {
-margin-left: 100px;
-margin-top: 30px;   
+.favoritosBoton {
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    color:#ffffff;
+    background-color: #500ED0;
+    align-self: center;
+    border-radius:5px;
 }
 
 @media ( max-width:1000px) {

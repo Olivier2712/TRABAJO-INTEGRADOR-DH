@@ -13,7 +13,7 @@ formularioBuscador.addEventListener('submit', function(e) {
      alert("Tu busqueda carece de caracteres");
  } else if (campoBuscador.value.length <= 3) {
      e.preventDefault();
-     alert("Tu busqueda no supera los 3 caracteres");
+     alert("La búsqueda no supera los 3 caracteres. Por favor, inténtalo devuelta.");
  } else {
      this.submit();
  }
