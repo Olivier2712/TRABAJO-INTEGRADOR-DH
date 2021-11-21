@@ -1,3 +1,5 @@
+window.addEventListener('load', function() {
+
 // URL DE DETALLES
 
 let urlDetail = 'https://api.themoviedb.org/3/tv/2316?api_key=0c401fea6bfd4fce4b40d85aa22f7fff&language=en-US';
@@ -45,27 +47,14 @@ let ratingHtml = document.querySelector('.ratingH')
 let ratingJS = ` | ${data.vote_count} people say: ${data.vote_average} |`
 
 ratingHtml.innerHTML = ratingJS;
-})
 
 
+// Imagenes
+let imgHtml = document.querySelector('.img-isla');
+let imgJS = ` <img class="img-isla" src="https://image.tmdb.org/t/p/original/${data.poster_path}"  width="" alt=""> `
 
-.catch(error => console.log(error));
+imgHtml.innerHTML = imgJS;
 
-
-// Fetch Imagenes 
-// LAS IMAGENES DE THE OFFICE NO ESTAN EN LA API, ASIQUE VOY A ARMAR EL CODIGO COMO SI ESTUVIERAN PERO QUE NO SE EEJECUTE.
-let urlImg = 'https://api.themoviedb.org/3/tv/2316/images?api_key=0c401fea6bfd4fce4b40d85aa22f7fff&language=en-US'
-fetch (urlImg)
-.then (response => response.json())
-.then (data => {
-    console.log(data)
- // let imgHtml = document.querySelector('.imagenJaSc')
- // let imgJS = data.posters[0].image;
-
- // imgHtml.innerHTML = `<img src="${imgJS}" + alt="" + width= "">`
-})
-
-.catch (error => console.log(error));
 
 
 // Boton agregar a favoritos
@@ -75,13 +64,23 @@ let botonFavoritos = document.querySelector('.favoritosBoton')
 botonFavoritos.addEventListener('click', function(e) {
     e.preventDefault();
 
-    localStorage.setItem('favoritos', 'Shutter Island')
+    localStorage.setItem('favoritos', data.id)
     botonFavoritos.innerHTML = 'Quitar';
 
     botonFavoritos.addEventListener('click', function(e) {
         e.preventDefault();
-        localStorage.removeItem('favoritos', 'Shutter Island')
+        localStorage.removeItem('favoritos', data.id)
         botonFavoritos.innerHTML = 'Agregar'
     })
 })
 
+})
+
+
+
+.catch(error => console.log(error));
+
+
+
+
+});
