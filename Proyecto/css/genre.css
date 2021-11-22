@@ -203,45 +203,33 @@ color: white;
     
 
 /** Arranca Mati**/
+
+main{
+    display: flex;
+    justify-content: space-between;
     
-.tit-gen{
-    text-align: center;
-    text-decoration: none;
-    font-size: 250%;
+}
+
+
+.h1generos{
+    width: 100%;
+    font-size: 200%;
+    color: #500ed0;
+}
+    
+.clasea{
+    display: flex;
     color: black;
-    font-family:'Raleway', sans-serif;
-    color: #500ED0;
-}
-.genbox{
-display: flex;
-flex-wrap: wrap;
-margin-left: 30%;   
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-background-color:white;   
-}
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 120px;
+    font-size: 140%;
 
-.seri{
-display: flexbox;
-margin-left: 30%;
 }
-.genlis{
-display: flexbox;
-margin: 5px;
-list-style: none;
-text-decoration: none;   
-font-size: 120%;
-}
+    
 
 
-.t-pelis{
-display: flexbox;
-margin: 10px;
-font-size: 200%;
-background-color:#500ED0;
-border: double black;
-text-align: center;
-color: white;
-}
+
 
 /**Termina Mati**/
 

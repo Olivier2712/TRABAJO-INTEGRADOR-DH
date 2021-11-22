@@ -201,47 +201,42 @@ color: white;
 
 
 /**Empieza Main **/
-h1{
-    margin-left: 10px;
-    font-size: 40px;
-    font-family: 'Raleway', sans-serif;
-    color: #500ED0;
+.genh1{
+    color: white;
+    margin-left: 40px;
 }
-h2{
-    font-size: 30px;
-    text-align: center;
-}
-
-p{
-    margin-left: 10px;
-    text-align: center;
-    font-size: 20px;
-}
-
-
-.box{
-    margin-left: -15%;
-    text-align: center;
-    width: 70%;
-}
- 
-
-#ole{
+.uldetallesgen{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 250px;
+    justify-content: space-around;  
+    align-items: center;
     list-style: none;
-    background-color: white;
-    text-decoration: none;
-    }
-
-
-
-#ole li{
-    width: 25%;
 }
+.imag{
+    width: 100%; 
+    text-decoration: none;
+}
+.h1dgenero{
+    color:black ;
+    margin-left: 35px;
+}
+.genh1{
+    color: #500ED0;
+    margin-left: 35px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Raleway', sans-serif;
+}
+.h3detallesgen{
+    color: black;
+}
+
+.liclase{
+    background-color:#500ED0;
+    text-decoration: none;
+}
+
 
    /**Termina main**/
 
