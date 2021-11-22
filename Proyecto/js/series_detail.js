@@ -6,8 +6,10 @@ let urlDetail = 'https://api.themoviedb.org/3/tv/2316?api_key=0c401fea6bfd4fce4b
 
 //fetch
 fetch (urlDetail)
-.then (response => response.json())
-.then (data => {
+.then ( function(response) {
+    return response.json();
+})
+.then (function(data) {
     console.log(data)
 
 //titulo de la pelicula    
@@ -78,8 +80,9 @@ botonFavoritos.addEventListener('click', function(e) {
 
 
 
-.catch(error => console.log(error));
-
+.catch (function (error) {
+    console.log (`El error es ${error}`);
+});
 
 
 
