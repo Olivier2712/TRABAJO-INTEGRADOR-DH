@@ -1,8 +1,14 @@
 window.addEventListener('load', function() {
 
+// Query string
+let queryString = location.search;
+let objetoQueryString = new URLSearchParams(queryString);
+let id = objetoQueryString.get('id');
+
+
 // URL DE DETALLES
 
-let urlDetail = 'https://api.themoviedb.org/3/tv/2316?api_key=0c401fea6bfd4fce4b40d85aa22f7fff&language=en-US';
+let urlDetail = `https://api.themoviedb.org/3/tv/${id}?api_key=0c401fea6bfd4fce4b40d85aa22f7fff&language=en-US` ;
 
 //fetch
 fetch (urlDetail)
@@ -53,27 +59,43 @@ ratingHtml.innerHTML = ratingJS;
 
 // Imagenes
 let imgHtml = document.querySelector('.img-isla');
-let imgJS = ` <img class="img-isla" src="https://image.tmdb.org/t/p/original/${data.poster_path}"  width="" alt=""> `
+let imgJS = ` <img class="foto-office" src="https://image.tmdb.org/t/p/original/${data.poster_path}"  width="500px" alt="500px"> `
 
 imgHtml.innerHTML = imgJS;
 
 
 
-// Boton agregar a favoritos
+// Selector del botón favorito
+let buttonFav = document.querySelector('.favoritosBoton');
+let favoritos = [];
+// localStorage
+    
+if(localStorage.getItem('favoritosToString')!=null){
+    favoritos = JSON.parse(localStorage.getItem('favoritosToString'));
+    if(favoritos.includes(data.id)) {
+        buttonFav.innerHTML = `Remover`;
+    }else{
+        buttonFav.innerHTML = `Agregar`;
+    }
+}
 
-let botonFavoritos = document.querySelector('.favoritosBoton')
+// Evento del botón agregar/remover favorito
 
-botonFavoritos.addEventListener('click', function(e) {
-    e.preventDefault();
+buttonFav.addEventListener('click', function(e){
 
-    localStorage.setItem('favoritos', data.id)
-    botonFavoritos.innerHTML = 'Quitar';
+    // e.preventDefault(); En caso de ser un hipervínculo (etiquetas <a href="">Enlace</a>)
 
-    botonFavoritos.addEventListener('click', function(e) {
-        e.preventDefault();
-        localStorage.removeItem('favoritos', data.id)
-        botonFavoritos.innerHTML = 'Agregar'
-    })
+    if (favoritos.includes(data.id)){
+        favoritos.splice(favoritos.indexOf(data.id),1);
+        buttonFav.innerHTML = `Agregar`;
+    }else{
+        favoritos.push(data.id);
+        buttonFav.innerHTML = `Remover`;
+    }
+    
+    localStorage.setItem('favoritosToString', JSON.stringify(favoritos));
+    console.log(localStorage);
+
 })
 
 })

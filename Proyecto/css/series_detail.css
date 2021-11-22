@@ -166,12 +166,14 @@ font-size: medium;
     }
 
     .img-isla{
-       width: 75%;
+       width: 60%;
        margin-left: 5%;
        margin-top: 1%;  
        margin-right: 1%;
     }
 
+
+    
     .sinopsis-contenedor{
         display: flex;
         flex-direction: column;

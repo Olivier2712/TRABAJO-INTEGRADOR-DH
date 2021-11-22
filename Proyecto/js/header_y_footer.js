@@ -12,10 +12,10 @@ formularioBuscador.addEventListener('submit', function(e) {
 
     if (campoBuscador.value == "") {
         
-        alert("Tu busqueda carece de caracteres");
+        alert("Tu búsqueda no incluye ningún carácter. Por favor inténtalo denuevo.");
     } else if (campoBuscador.value.length <= 3) {
     
-        alert("La búsqueda no supera los 3 caracteres. Por favor, inténtalo devuelta.");
+        alert("Tu búsqueda no supera los 3 caracteres. Por favor, inténtalo devuelta.");
     } else {
         this.submit();
     }

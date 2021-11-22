@@ -22,21 +22,26 @@ fetch (urlResultadosPeliculas)
     
     console.log(data)
 
-    for (i= 0; i < 10; i++) {
+    if (data.total_results>0){
+        for (i= 0; i < 10; i++) {
 
-        let tituloPeliculas = data.results[i].title;
-        let posterPeliculas =` https://image.tmdb.org/t/p/original/${data.results[i].poster_path}  `;
-        
+            let tituloPeliculas = data.results[i].title;
+            let posterPeliculas =` https://image.tmdb.org/t/p/original/${data.results[i].poster_path}  `;
+            let idPeliculas = data.results[i].id;
+            
+            let contenidoHtmlPeliculas = document.querySelector('.lista-titulos-relacionados');
+    
+            let resultadosPeliculasEnHtml = `<li class="elemento-titulos-relacionados"> <a class="botones-titulos-relacionados" href="../htmls/movie_detail.html?id=${idPeliculas}"> <img class="img-titulos-relacionados" src="${posterPeliculas}" alt=""> <h1 class="nombres-resultados"> ${tituloPeliculas}  </h1> </a> </li>`;
+    
+            contenidoHtmlPeliculas.innerHTML += `${resultadosPeliculasEnHtml}`;
+    
+            
+     
+        }
+    } else {
         let contenidoHtmlPeliculas = document.querySelector('.lista-titulos-relacionados');
-
-        let resultadosPeliculasEnHtml = `<li class="elemento-titulos-relacionados"> <a class="botones-titulos-relacionados" href="../htmls/movie_detail.html"> <img class="img-titulos-relacionados" src="${posterPeliculas}" alt=""> <h1 class="nombres-resultados"> ${tituloPeliculas}  </h1> </a> </li>`;
-
-        contenidoHtmlPeliculas.innerHTML += `${resultadosPeliculasEnHtml}`;
-
-        
- 
+        contenidoHtmlPeliculas.innerHTML = `<p class="msj-resultado" > No hay resultados relacionados con tu búsqueda </p>`;
     }
-
    
 })
 
@@ -58,19 +63,25 @@ fetch (urlResultadosSeries)
     console.log(data)
 
     
+    if (data.total_results>0){
+        for (i= 0; i < 10; i++) {
 
-    for (i= 0; i < 10; i++) {
+            let tituloSeries = data.results[i].name;
+            let posterSeries =` https://image.tmdb.org/t/p/original/${data.results[i].poster_path}  `;
+            let idSeries = data.results[i].id;
 
-        let tituloSeries = data.results[i].name;
-        let posterSeries =` https://image.tmdb.org/t/p/original/${data.results[i].poster_path}  `;
-        
-        let contenidoHtmlSeries = document.querySelector('.lista-titulos-relacionados');
 
-        let resultadosSeriesEnHtml = `<li class="elemento-titulos-relacionados"> <a class="botones-titulos-relacionados" href="../htmls/series_detail.html"> <img class="img-titulos-relacionados" src="${posterSeries}" alt=""> <h1 class="nombres-resultados"> ${tituloSeries}  </h1> </a> </li>`;
+            let contenidoHtmlSeries = document.querySelector('.lista-titulos-relacionados');
 
-        contenidoHtmlSeries.innerHTML += `${resultadosSeriesEnHtml}`;
+            let resultadosSeriesEnHtml = `<li class="elemento-titulos-relacionados"> <a class="botones-titulos-relacionados" href="../htmls/series_detail.html?id=${idSeries}"> <img class="img-titulos-relacionados" src="${posterSeries}" alt=""> <h1 class="nombres-resultados"> ${tituloSeries}  </h1> </a> </li>`;
 
-        
+            contenidoHtmlSeries.innerHTML += `${resultadosSeriesEnHtml}`;
+
+            
+        }
+    } else {
+        let contenidoHtmlPeliculas = document.querySelector('.lista-titulos-relacionados');
+        contenidoHtmlPeliculas.innerHTML = `<p class="msj-resultado" > No hay resultados relacionados con tu búsqueda </p>`;
     }
     
     

@@ -1,8 +1,12 @@
 window.addEventListener('load', function() {
+// Query string
+let queryString = location.search;
+let objetoQueryString = new URLSearchParams(queryString);
+let id = objetoQueryString.get('id');
 
 // URL DE DETALLES
 
-let urlDetail = 'https://api.themoviedb.org/3/movie/11324?api_key=0c401fea6bfd4fce4b40d85aa22f7fff&language=en-US';
+let urlDetail = `https://api.themoviedb.org/3/movie/${id}?api_key=0c401fea6bfd4fce4b40d85aa22f7fff&language=en-US`;
 
 // FETCH API MOVIE DATA BASE  
 fetch (urlDetail)
@@ -61,25 +65,40 @@ fetch (urlDetail)
 
 
 
-    // Boton agregar a favoritos
+    // Selector del botón favorito
+    let buttonFav = document.querySelector('.favoritosBoton');
+    let favoritos = [];
+    // localStorage
+        
+    if(localStorage.getItem('favoritosToString')!=null){
+        favoritos = JSON.parse(localStorage.getItem('favoritosToString'));
+        if(favoritos.includes(data.id)) {
+            buttonFav.innerHTML = `Remover`;
+        }else{
+            buttonFav.innerHTML = `Agregar`;
+        }
+    }
+    
+    // Evento del botón agregar/remover favorito
 
-    let botonFavoritos = document.querySelector('.favoritosBoton')
+    buttonFav.addEventListener('click', function(e){
 
-    botonFavoritos.addEventListener('click', function(e) {
-        e.preventDefault();
+        // e.preventDefault(); En caso de ser un hipervínculo (etiquetas <a href="">Enlace</a>)
 
-        localStorage.setItem('favoritos', data.id)
-        botonFavoritos.innerHTML = 'Quitar';
+        if (favoritos.includes(data.id)){
+            favoritos.splice(favoritos.indexOf(data.id),1);
+            buttonFav.innerHTML = `Agregar`;
+        }else{
+            favoritos.push(data.id);
+            buttonFav.innerHTML = `Remover`;
+        }
+        
+        localStorage.setItem('favoritosToString', JSON.stringify(favoritos));
+        console.log(localStorage);
 
-        botonFavoritos.addEventListener('click', function(e) {
-            e.preventDefault();
-            localStorage.removeItem('favoritos', data.id)
-            botonFavoritos.innerHTML = 'Agregar'
-        })
     })
 
-    })
-
+})
 
 
     .catch (function (error) {
