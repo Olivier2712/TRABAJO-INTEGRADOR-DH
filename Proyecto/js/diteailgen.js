@@ -1,4 +1,3 @@
-//obtengo los valores que vienen por query string
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
 const genero = urlParams.get('genero');
@@ -14,7 +13,6 @@ const titulo = document.querySelector('.genh1');
 
 titulo.innerText = genero;
 
-//consultar los datos en la api
 
 fetch(url)
     .then(function( resp ){
@@ -29,7 +27,6 @@ fetch(url)
             if(resp.results[i].backdrop_path != null) {
 
                 
-                //pregunto si es serie o pelicula entonces saco el nombre del objeto
                 if(tipo == 'series') {
                     let id = resp.results[i].id;
                     let nombre = resp.results[i].name;
